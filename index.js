@@ -41,9 +41,7 @@ const razorpayInstance = new Razorpay({
 
 //app.use(express.json());
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../frontend/html/success.html'))
-})
+
 
 app.post('/createOrder', (req, res)=>{
     const {amount, currency, receipt, notes} = req.body;
